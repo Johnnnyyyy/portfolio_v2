@@ -448,24 +448,44 @@ section p {
 /* Scroll Hint Floating Text */
 
 .scroll-hint {
-  position: absolute;
-  top: 15px;
+  position: fixed;
+
   left: 50%;
+  bottom: 40px;
   transform: translateX(-50%);
+
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+
   font-size: 14px;
   color: white;
-  opacity: 0.75;
+  opacity: 0.8;
+
   animation: float 2s infinite ease-in-out;
+
   pointer-events: none;
-  z-index: 100;
+
+  z-index: 9999;
 }
 
-.scroll-hint .chevron {
-  animation: bounce 1.5s infinite;
-  font-size: 16px;
+/* Float animation */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-6px);
+  }
+}
+
+@media(min-width:769px) {
+  .scroll-hint {
+    display: none;
+  }
 }
 
 /* Float animation */
