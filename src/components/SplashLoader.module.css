@@ -1,0 +1,73 @@
+.splashContainer {
+    background: linear-gradient(135deg, #09090b 0%, #3b0764 50%, #020617 100%);
+    z-index: 99999;
+}
+
+.logoGlow {
+    filter:
+        drop-shadow(0 0 20px rgba(59, 130, 246, 0.8)) drop-shadow(0 0 40px rgba(139, 92, 246, 0.6));
+}
+
+.ringGlow {
+    filter:
+        drop-shadow(0 0 30px rgba(59, 130, 246, 0.7)) drop-shadow(0 0 60px rgba(139, 92, 246, 0.5)) drop-shadow(0 0 90px rgba(236, 72, 153, 0.3));
+}
+
+@keyframes ringPulse {
+
+    0%,
+    100% {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes energyWave {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.9);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(1.3);
+    }
+}
+
+.energyWave {
+    animation: energyWave 3s ease-in-out infinite;
+}
+
+.particleFloat {
+    animation: particleFloat 4s ease-in-out infinite;
+}
+
+@keyframes particleFloat {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+        opacity: 1;
+    }
+}
+
+.progressBar {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}

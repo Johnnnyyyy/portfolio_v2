@@ -18,12 +18,14 @@ export const metadata = {
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Chatbot from "@/components/Chatbot";
+import SplashLoader from "@/components/SplashLoader";
 import "./style.css";
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
             <body>
+                <SplashLoader />
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
