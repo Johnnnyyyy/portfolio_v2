@@ -52,7 +52,7 @@ export default function Chatbot() {
                     <input
                         value={input}
                         onChange={e => setInput(e.target.value)}
-                        placeholder="Ask about anything about me..."
+                        placeholder="Ask anything about me..."
                     />
 
                     <button onClick={sendMessage}>
