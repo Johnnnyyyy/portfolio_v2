@@ -79,7 +79,7 @@ export default function Projects() {
                 {projectList.map((project, i) => (
                     <motion.a
                         key={i}
-                        href={project.url}
+                        href={project.url.replace(/^http:/, "https:")}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="project-card"
