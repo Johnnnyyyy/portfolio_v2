@@ -52,7 +52,17 @@ export default function Hero() {
                     </a>
 
                     {/* Viber */}
-                    <a href={viberUrl} target="_blank" className="social-icon">
+                    <a
+                        href={viberUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => {
+                            if (!/viber/i.test(navigator.userAgent)) {
+                                return;
+                            }
+                        }}
+                        className="social-icon"
+                    >
                         <FaViber />
                     </a>
 
