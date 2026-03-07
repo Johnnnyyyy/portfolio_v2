@@ -7,11 +7,18 @@ export const metadata = {
         "full stack developer",
         "java developer",
         "react developer",
+        "johnrey alcantara",
+        "john alcantara",
+        "johnrey",
+        "john",
+        "alcantara"
     ],
 };
 
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
+import Chatbot from "@/components/Chatbot";
+import "./style.css";
 
 export default function RootLayout({ children }) {
     return (
@@ -24,6 +31,10 @@ export default function RootLayout({ children }) {
                     disableTransitionOnChange
                 >
                     {children}
+
+                    {/* Chatbot should be inside body */}
+                    <Chatbot />
+
                 </ThemeProvider>
             </body>
         </html>
