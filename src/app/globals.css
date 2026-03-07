@@ -444,3 +444,145 @@ section p {
   border-radius: 14px;
   overflow: hidden;
 }
+
+/* Scroll Hint Floating Text */
+
+.scroll-hint {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: white;
+  opacity: 0.75;
+  animation: float 2s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.scroll-hint .chevron {
+  animation: bounce 1.5s infinite;
+  font-size: 16px;
+}
+
+/* Float animation */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, -4px);
+  }
+}
+
+/* Bounce arrow */
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+/* Show only on mobile */
+@media(min-width:769px) {
+  .scroll-hint {
+    display: none;
+  }
+}
+
+/* ===== Mobile Responsive ===== */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .social-icon {
+    font-size: 22px;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
+  .logo-img {
+    height: 40px;
+    width: auto;
+  }
+
+  /* Hero */
+
+  .hero-card {
+    padding: 40px 20px;
+    border-radius: 25px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  /* Sections */
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  /* Projects Grid */
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  /* Experience Card */
+
+  .experience-card {
+    padding: 25px 20px;
+  }
+
+  /* Tech Stack */
+
+  .tech-row {
+    gap: 20px;
+  }
+
+  .tech-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  /* Floating Scroll Button */
+
+  .scroll-top-btn {
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+  }
+}

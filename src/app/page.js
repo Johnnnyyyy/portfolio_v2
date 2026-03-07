@@ -7,11 +7,13 @@ import TechStack from "../components/TechStack";
 import Contact from "../components/Contact";
 import ScrollTopButton from "../components/ScrollTopButton";
 import GalaxyBackground from "@/components/GalaxyBackground";
+import ScrollHint from "@/components/ScrollHint";
 
 export default function Page() {
     return (
         <>
             <GalaxyBackground />
+            <ScrollHint />
             <Navbar />
             <Hero />
             <About />
