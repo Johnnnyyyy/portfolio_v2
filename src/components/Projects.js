@@ -6,7 +6,7 @@ import Image from "next/image";
 // Project list
 const projectList = [
     {
-        url: "https://etrade.net.ph",
+        url: "https://etrade.net.ph/etrade-2.0/login/auth",
         title: "eTrade Portal",
         desc: "A platform operated by Cargo Data Exchange Center, Inc. (CDEC) that provides electronic commerce, trade, and logistics solutions for Philippine businesses.",
         tech: "Grails 1.3.7 | Java, MySQL, API, Auth",
