@@ -35,7 +35,7 @@ export default function About() {
                     • PEZA Digital Systems — export/import compliance workflows<br />
                     • GoFast.ph — container logistics return management<br />
                     • PTOPS / CDC / CCBI enterprise trade interfaces<br />
-                    • ACMMS — academic/container tracking automation<br />
+                    • ACMMS — automated container movement monitoring system<br />
 
                     <br /><br />
 
